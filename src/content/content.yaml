@@ -1,0 +1,33 @@
+name: Simon Ardrey
+email: simonardrey@gmail.com
+phone: +61 413456882
+avatar: http://dffewfewf
+github: simonardrey
+stackoverflow: simonardrey
+
+sidebarSections:
+  - title: Location
+    type: text
+    content: "Remote and location independent. Willing to travel or relocate."
+  - title: Expertise
+    type: list
+    content:
+      - ksdjfsjf
+      - ksdnj
+  - title: Skills
+    content: |
+      jhjhj
+      # djfbskjfdskfj
+      khgg
+
+summary:
+  - blah blah
+  - blah blah
+
+theme:
+  baseColor: "#ff0000"
+
+experience:
+  years: [2006, 2008]
+  title: Software Developer
+  company: Sirco Engineering
