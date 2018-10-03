@@ -7,7 +7,7 @@ const TextBase = withTheme(({
   children,
   theme,
   m, mt, mr, mb, ml, mx, my,
-  // p, pt, pr, pb, pl, px, py,
+  p, pt, pr, pb, pl, px, py,
   color,
   size,
   weight,
@@ -22,6 +22,13 @@ const TextBase = withTheme(({
     ...notUndefined(mr) && { marginRight: `${mr}em` },
     ...notUndefined(mb) && { marginBottom: `${mb}em` },
     ...notUndefined(ml) && { marginLeft: `${ml}em` },
+    ...notUndefined(p) && { padding: `${p}em` },
+    ...notUndefined(px) && { paddingLeft: `${px}em`,  paddingRight: `${px}em` },
+    ...notUndefined(py) && { paddingTop: `${py}em`,  paddingBottom: `${py}em` },
+    ...notUndefined(pt) && { paddingTop: `${pt}em` },
+    ...notUndefined(pr) && { paddingRight: `${pr}em` },
+    ...notUndefined(pb) && { paddingBottom: `${pb}em` },
+    ...notUndefined(pl) && { paddingLeft: `${pl}em` },
     ...notUndefined(color) && { color: color },
     ...notUndefined(size) && { fontSize: `${size}em` },
     ...notUndefined(weight) && { fontWeight: weight },
@@ -34,6 +41,7 @@ TextBase.defaultProps = {
 };
 
 const notUndefined = (x) => typeof x !== 'undefined';
+
 /* const firstDefinedValue = (list) => {
   for (let value of list) {
     if (notUndefined(value)) {

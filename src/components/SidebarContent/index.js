@@ -8,6 +8,7 @@ import {
   RoleText,
   InfoIcon,
   SkillsSection,
+  ExternalLink,
 } from './components/General';
 
 export default () => (
@@ -18,11 +19,21 @@ export default () => (
       <RoleText>Senior Web Application Developer</RoleText>
     </Center>
 
-    <InfoIcon as="span" icon="map-marker-alt">Gold Coast, Australia</InfoIcon>
-    <InfoIcon as="span" icon="phone" flip="horizontal" >+61 413456882</InfoIcon>
-    <InfoIcon as="span" icon="envelope">simonardrey@gmail.com</InfoIcon>
-    <InfoIcon as="span" icon={['fab', 'github']}>simonardrey</InfoIcon>
-    <InfoIcon as="span" icon={['fab', 'stack-overflow']}>simonardrey</InfoIcon>
+    <InfoIcon icon="map-marker-alt">
+      <ExternalLink href="https://www.google.com/maps/place/Gold+Coast+QLD,+Australia/@-27.9539379,153.0891707,10z/data=!3m1!4b1!4m5!3m4!1s0x6b911a472b5d60b7:0x302a35af3deaf70!8m2!3d-28.016667!4d153.4">Gold Coast, Australia</ExternalLink>
+    </InfoIcon>
+    <InfoIcon icon="phone" flip="horizontal">
+      <ExternalLink href="tel:+61 413456882">(+61) 0413456882</ExternalLink>
+    </InfoIcon>
+    <InfoIcon icon="envelope">
+      <ExternalLink href="mailto:simonardrey@gmail.com">simonardrey@gmail.com</ExternalLink>
+    </InfoIcon>
+    <InfoIcon icon={['fab', 'github']}>
+      <ExternalLink href="https://github.com/SimonArdrey">simonardrey</ExternalLink>
+    </InfoIcon>
+    <InfoIcon icon={['fab', 'stack-overflow']}>
+      <ExternalLink href="https://stackoverflow.com/cv/simon.ardrey">simonardrey</ExternalLink>
+    </InfoIcon>
 
     <section>
       <SectionHeading>Location</SectionHeading>
@@ -34,7 +45,7 @@ export default () => (
     <section>
       <SectionHeading>Expertise</SectionHeading>
       <article>
-        <SidebarText>
+        <SidebarText size={0.9}>
           <ul style={{ paddingLeft: '1.5em' }}>
             <li>Software Architecture</li>
             <li>Techlead</li>

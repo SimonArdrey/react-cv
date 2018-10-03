@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const SidebarText = styled(Text)`
   color: ${props => props.theme.sidebar.fg};
+  font-size: 0.9em;
 `;
 
 export const SidebarHeadingText = styled(HeadingText)`
@@ -47,10 +48,11 @@ const InfoIconContainer = styled.div`
   margin: 0.4em 0;
 `;
 
-const InfoIconText = styled(SidebarText)`
+const InfoIconText = styled(SidebarText).attrs({
+  as: 'span',
+})`
   padding-left: 0.5em;
-  margin: 0;
-  display: inline;
+  font-size: 0.9em;
 `;
 
 export const InfoIcon = ({ children, icon, ...props }) => (
@@ -68,3 +70,13 @@ export const SkillsSection = ({ title, children }) => (
     </SidebarText>
   </React.Fragment>
 );
+
+export const ExternalLink = styled.a.attrs({
+  target: '_blank',
+})`
+  color: ${props => props.theme.sidebar.fg};
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+`;
