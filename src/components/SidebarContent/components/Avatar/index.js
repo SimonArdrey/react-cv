@@ -8,24 +8,11 @@ export default styled(Image)`
   border: 4px solid #ccc;
   position: relative;
   background-color: #000;
-
-  &:after {
-    position: absolute;
-    height: 20px;
-    line-height: 20px;
-    width: 100%
-    bottom: 0;
-    left: 0;
-    text-align: center;
-    background-color: #000;
-    display: inline-block;
-    content: "Change";
-    visibility: hidden;
-  }
+  transition: all 0.4s;
+  margin: 4px;
 
   &:hover {
-    &:after {
-      visibility: visible;
-    }
+    border: 8px solid #ddd;
+    margin: 0;
   }
 `;

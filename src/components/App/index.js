@@ -17,7 +17,7 @@ const theme = {
   },
   headingFont: {
     family: "'Roboto Condensed', sans-serif",
-    weight: 400,
+    weight: 200,
     color: '#000',
     size: 1,
     margin: 0,

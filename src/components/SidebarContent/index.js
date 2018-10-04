@@ -1,4 +1,10 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import {
+  faCaretRight,
+} from '@fortawesome/free-solid-svg-icons'
+
 import Avatar from './components/Avatar';
 import {
   SectionHeading,
@@ -10,6 +16,8 @@ import {
   SkillsSection,
   ExternalLink,
 } from './components/General';
+
+library.add(faCaretRight);
 
 export default () => (
   <React.Fragment>
@@ -36,7 +44,10 @@ export default () => (
     </InfoIcon>
 
     <section>
-      <SectionHeading>Location</SectionHeading>
+      <SectionHeading>
+        <FontAwesomeIcon icon="caret-right" fixedWidth transform={{ rotate: 90 }} />
+        Location
+      </SectionHeading>
       <article>
         <SidebarText>Remote and location independent. Willing to travel or relocate.</SidebarText>
       </article>
@@ -45,7 +56,7 @@ export default () => (
     <section>
       <SectionHeading>Expertise</SectionHeading>
       <article>
-        <SidebarText size={0.9}>
+        <SidebarText>
           <ul style={{ paddingLeft: '1.5em' }}>
             <li>Software Architecture</li>
             <li>Techlead</li>

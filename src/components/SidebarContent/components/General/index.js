@@ -34,14 +34,15 @@ export const Center = styled.div`
 export const NameText = styled(SidebarHeadingText)`
   font-size: 2em;
   text-transform: uppercase;
-  margin: 0.3em 0;
+  margin: 0.3em 0 0.2em 0;
 `;
 
-export const RoleText = styled(SidebarHeadingText)`
-  font-size: 1.5em;
+export const RoleText = styled(SidebarText)`
+  font-size: 1.4em;
   font-style: italic;
+  font-weight: 300;
   text-transform: uppercase;
-  margin: 0.5em 0;
+  margin: 0.2em 0 0.8em 0;
 `;
 
 const InfoIconContainer = styled.div`
@@ -64,7 +65,7 @@ export const InfoIcon = ({ children, icon, ...props }) => (
 
 export const SkillsSection = ({ title, children }) => (
   <React.Fragment>
-    <SidebarText my={1} size={0.9} weight={700}>{title}</SidebarText>
+    <SidebarText my={1} weight={700}>{title}</SidebarText>
     <SidebarText weight={200} size={0.9}>
       {children}
     </SidebarText>
