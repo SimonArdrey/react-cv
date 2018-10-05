@@ -2,8 +2,6 @@ import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import { Flex, Box } from 'reflexbox';
 
-import { Button, ButtonGroup } from 'components/Button';
-import Spinner from 'components/Spinner';
 import SidebarContent from 'components/SidebarContent';
 import CVPage from 'components/CVPage';
 
@@ -36,8 +34,6 @@ export default () => (
         </SideColumn>
 
         <MainColumn>
-          <Button>Test</Button>
-          <Spinner size="30px" />
           <CVPage />
         </MainColumn>
       </AppLayout>
