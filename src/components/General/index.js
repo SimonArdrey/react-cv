@@ -90,3 +90,7 @@ HeadingText.defaultProps = {
     },
   }
 };
+
+export const Center = styled.div`
+  text-align: center;
+`;

@@ -9,13 +9,13 @@ import Avatar from './components/Avatar';
 import {
   SectionHeading,
   SidebarText,
-  Center,
   NameText,
   RoleText,
   InfoIcon,
   SkillsSection,
   ExternalLink,
 } from './components/General';
+import { Center } from 'components/General';
 
 library.add(faCaretRight);
 

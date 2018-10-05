@@ -27,10 +27,6 @@ export const SectionHeading = ({ children }) => (
   </SectionLineHeading>
 );
 
-export const Center = styled.div`
-  text-align: center;
-`;
-
 export const NameText = styled(SidebarHeadingText)`
   font-size: 2em;
   text-transform: uppercase;
