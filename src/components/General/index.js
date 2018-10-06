@@ -3,6 +3,7 @@ import styled, { withTheme } from 'styled-components';
 
 const TextBase = withTheme(({
   className,
+  style,
   as,
   children,
   theme,
@@ -14,7 +15,8 @@ const TextBase = withTheme(({
   ...props
 }) => {
   const Component = as;
-  const style = {
+  const newStyle = {
+    ...style,
     ...notUndefined(m) && { margin: `${m}em` },
     ...notUndefined(mx) && { marginLeft: `${mx}em`,  marginRight: `${mx}em` },
     ...notUndefined(my) && { marginTop: `${my}em`,  marginBottom: `${my}em` },
@@ -34,7 +36,7 @@ const TextBase = withTheme(({
     ...notUndefined(weight) && { fontWeight: weight },
   };
 
-  return (<Component className={className} style={style} {...props}>{children}</Component>);
+  return (<Component className={className} style={newStyle} {...props}>{children}</Component>);
 });
 TextBase.defaultProps = {
   as: 'p',
