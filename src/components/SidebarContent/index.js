@@ -56,7 +56,7 @@ export default () => (
     <section>
       <SectionHeading>Expertise</SectionHeading>
       <article>
-        <SidebarText>
+        <SidebarText as="div">
           <ul style={{ paddingLeft: '1.5em' }}>
             <li>Software Architecture</li>
             <li>Techlead</li>
