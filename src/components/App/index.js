@@ -72,5 +72,5 @@ const SideColumn = styled(Box).attrs({
 const MainColumn = styled(Box).attrs({
   w: [2/3, 3/4],
   py: 3,
-  px: 2,
+  px: 3,
 })``;
