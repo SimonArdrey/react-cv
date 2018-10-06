@@ -1,9 +1,23 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import { Flex, Box } from 'reflexbox';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import {
+  faMapMarkerAlt,
+  faPhone,
+  faEnvelope
+} from '@fortawesome/free-solid-svg-icons'
 
 import SidebarContent from 'components/SidebarContent';
 import CVPage from 'components/CVPage';
+
+library.add(
+  fab,
+  faMapMarkerAlt,
+  faPhone,
+  faEnvelope
+);
 
 const theme = {
   font: {
