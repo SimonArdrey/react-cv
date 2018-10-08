@@ -9,11 +9,11 @@ const SectionLineHeading = styled(LineHeading).attrs({
   color: #555;
   font-weight: 700;
   font-size: 1.4em;
-  margin: 1.5em 0 0.8em 0;
+  margin: 0 0 0.8em 0;
 `;
 
-export const SectionHeading = ({ children }) => (
-  <SectionLineHeading>
+export const SectionHeading = ({ children, align }) => (
+  <SectionLineHeading align={align}>
     <HeadingText weight={700} color="#555">{children}</HeadingText>
   </SectionLineHeading>
 );
